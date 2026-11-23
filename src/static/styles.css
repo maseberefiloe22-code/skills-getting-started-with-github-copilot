@@ -82,11 +82,28 @@ section h3 {
 
 .participants ul {
   margin-top: 6px;
-  padding-left: 20px;
+  padding: 0;
+  list-style: none;
 }
 
 .participants li {
-  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.delete-participant {
+  flex-shrink: 0;
+  padding: 4px 8px;
+  background: transparent;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.delete-participant:hover {
+  background-color: #ffebee;
 }
 
 .form-group {
